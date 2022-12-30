@@ -8,7 +8,7 @@
     margin-bottom:0%;
 }
 
-#banner{
+#banner{ /* tiene un id -Selectores de identificación*/
   
     width: 100%;
     height:450px ;
@@ -33,7 +33,7 @@ p{ text-align: center;  /*SELECTORES*/
 #mision{ /* tiene un id -Selectores de identificación*/
     font-size: 28px;
 }
-#caracteristica{
+#caracteristica{ /* tiene un id -Selectores de identificación*/
     font-size: 26px;
     margin-left: 15%;
     margin-right: 15%;
@@ -41,11 +41,11 @@ p{ text-align: center;  /*SELECTORES*/
 }
 
 
-em strong{   /*SELECTORES-*/
+em strong{   /*SELECTOR de etiqueta*/
     color: rgb(172, 246, 61);
 }
 
-.diferenciales{
+.diferenciales{/*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
     background: rgb(218, 140, 85) ;
     padding: 30px;
 
@@ -58,7 +58,7 @@ h3{
     margin-left: 15%;
 }
 
-.items{  /*clase---permite reutilizar estilos*/
+.items{  /* Selector de clase---permite reutilizar estilos*/
     font-style: italic;
     font-size: 22px;
     color: aqua;
@@ -74,6 +74,6 @@ ul{
    
 }
 
-.imagenDiferenciales{
+.imagenDiferenciales{ /*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
     width: 45%;
 }
