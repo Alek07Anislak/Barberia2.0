@@ -1,0 +1,29 @@
+header{
+    background-color: rgba(234, 99, 2, 0.9);
+    padding: 20px 0px;/* 20px superior e inferior --- 0px laterales//// Propiedad de espaciamiento externo */
+}
+
+.logoEnlaces{
+    position: relative;
+    width:60%;/* 940px;*/
+    margin: 0px auto; /* Cero px para los lados y auto para los bordes supp e inferior*/
+} 
+nav  {
+    position: absolute;
+    top: 110px;;
+    right: 0px;
+
+}
+nav li{
+    display: inline;
+    margin: 0px 0px 0px 20px; /*genera distanciamiento entre los elemntos de la lista, tiene 4 parametros*/
+}
+
+nav a{
+    text-transform: uppercase;  /*transforma a texto en mayuscula*/
+    color: black;
+    font-weight: bold;/* Texto en Negrilla*/
+    font-size: 26px; /*tamaño de letras*/
+    text-decoration: none; /*quitar el subrayado que el navegador coloca por defecto a los Enlaces o hipervinculos*/ 
+
+}
