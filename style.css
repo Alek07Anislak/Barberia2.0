@@ -3,7 +3,7 @@
     padding-left: 30px;
     font-size: 70px;
     color: rgb(0, 0, 0);
-    background-color: rgb(107, 39, 111);
+    background-color: rgba(19, 101, 124, 0.805);
     margin-top: 0%;
     margin-bottom:0%;
 }
@@ -16,7 +16,7 @@
     
 }
 .principal{ /*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
-    background-color: rgb(51, 11, 89);
+    background-color: rgba(34, 2, 64, 0.92);
     padding: 30px;/*espaciamiento interno entre lineas*/
 }
 
@@ -46,7 +46,7 @@ em strong{   /*SELECTOR de etiqueta*/
 }
 
 .diferenciales{/*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
-    background: rgb(218, 140, 85) ;
+    background: rgba(234, 98, 2, 0.92) ;
     padding: 30px;
 
 }
