@@ -33,8 +33,8 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 }
 
-main{
-    background-color: rgba(34, 2, 64, 0.73);
+.mainproductos{
+    background-color: rgba(34, 2, 64, 0.781);
 }
 
 .tiposDeTrabajo{
@@ -93,6 +93,32 @@ main{
     font-weight: bold;
     margin-top: 10px;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+.maincontacto {
+    background-color: rgba(34, 2, 64, 0.73);
+    /*width: 940px;
+    margin: 0 auto;*/
+    
+}
+form{
+    margin: 40px 0;/*margen superior e inferior de 40px y margen laterales de cero*/
+    padding: 20px 30px;
+    margin: 0 450px;
+ 
+}
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 350px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 footer{
     text-align: center;        
     background-color: rgb(15, 177, 222);
@@ -103,3 +129,5 @@ footer{
     font-size: 10px;
     margin: 25px;
 }
+
+
