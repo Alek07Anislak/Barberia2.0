@@ -29,6 +29,7 @@ nav a{
 
 nav a:hover{ /*Captura el movimiento del mouse*/
     color: blueviolet;
+    text-decoration: underline;
 
 }
 
@@ -56,8 +57,16 @@ main{
     border-width: 3px;
     border-style: solid;*/
 
-    border: 2px solid cyan;
+    border: 2px solid rgb(234, 99, 2);;
     border-radius: 15px; /*bordes redondeados*/
+}
+
+.tiposDeTrabajo li:hover{ /* propiedad que Captura el movimiento del mouse*/
+    border-width: 3px;
+}
+
+.tiposDeTrabajo li:active{ /* propiedad que Captura el click del mouse*/
+    border-color: rgb(15, 177, 222);
 }
 
 .tiposDeTrabajo h2{
@@ -66,6 +75,12 @@ main{
     color: aliceblue;
 
 }
+
+.tiposDeTrabajo li:hover h2{ /*Colocamos esta descripción para ser mas especificos, ya que con ".tiposDeTrabajo h2" no realiza captura el movimiento del mouse sobre el h2*/
+    font-size: 33px;
+
+} 
+
 .tiposDeTrabajo p{
     color: aliceblue;
 }
