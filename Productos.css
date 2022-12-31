@@ -25,5 +25,50 @@ nav a{
     font-weight: bold;/* Texto en Negrilla*/
     font-size: 26px; /*tamaño de letras*/
     text-decoration: none; /*quitar el subrayado que el navegador coloca por defecto a los Enlaces o hipervinculos*/ 
+}
+main{
+    background-color: rgba(34, 2, 64, 0.73);
+}
 
+.tiposDeTrabajo{
+    width: 65%;
+    margin: 0px auto;
+    padding: 50px;
+}
+
+.tiposDeTrabajo li{
+    display: inline-block;
+    text-align: center; /*Alinea el texto al centro*/
+    width: 30%;
+    vertical-align: top; /*Alineación vertical respecto de top*/
+    /*background-color: aqua;*/
+    margin: 0% 1.5%;/*  Margenes de 0% leteral y 1.5% en los laterales*/
+    padding: 30px 20px; /*espaciamiento interno-- 30px en la vertical y 20px en la horizontal -- aumenta el tamaño*/
+    box-sizing: border-box; /*Tamaño de la caja---el borde de cada uno de los items sera el limite del espacio que va ser definido, en nuestro caso seria el 
+    30%*/
+    /*border-color: black;
+    border-width: 3px;
+    border-style: solid;*/
+
+    border: 2px solid cyan;
+    border-radius: 15px; /*bordes redondeados*/
+}
+
+.tiposDeTrabajo h2{
+    font-size: 30px;/*tamaño de letras*/
+    font-weight: bold;/* Texto en Negrilla*/
+    color: aliceblue;
+
+}
+.tiposDeTrabajo p{
+    color: aliceblue;
+}
+.productoDescripcion {
+    font-size: 20px;
+}
+
+.productoPrecio {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
 }
