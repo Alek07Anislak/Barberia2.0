@@ -27,7 +27,7 @@ nav a{
     text-decoration: none; /*quitar el subrayado que el navegador coloca por defecto a los Enlaces o hipervinculos*/ 
 } 
 
-nav a:hover{ /*Captura el movimiento del mouse*/
+nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
     color: blueviolet;
     text-decoration: underline;
 
@@ -61,11 +61,11 @@ main{
     border-radius: 15px; /*bordes redondeados*/
 }
 
-.tiposDeTrabajo li:hover{ /* propiedad que Captura el movimiento del mouse*/
+.tiposDeTrabajo li:hover{ /* propiedad que Captura el movimiento del mouse(Pseudo Clase de CSS)*/
     border-width: 3px;
 }
 
-.tiposDeTrabajo li:active{ /* propiedad que Captura el click del mouse*/
+.tiposDeTrabajo li:active{ /* propiedad que Captura el click del mouse(Pseudo Clase de CSS)*/
     border-color: rgb(15, 177, 222);
 }
 
@@ -92,4 +92,14 @@ main{
     font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
+}
+footer{
+    text-align: center;        
+    background-color: rgb(15, 177, 222);
+    padding: 40px;
+}
+.copyRight {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin: 25px;
 }
