@@ -25,7 +25,13 @@ nav a{
     font-weight: bold;/* Texto en Negrilla*/
     font-size: 26px; /*tamaño de letras*/
     text-decoration: none; /*quitar el subrayado que el navegador coloca por defecto a los Enlaces o hipervinculos*/ 
+} 
+
+nav a:hover{ /*Captura el movimiento del mouse*/
+    color: blueviolet;
+
 }
+
 main{
     background-color: rgba(34, 2, 64, 0.73);
 }
