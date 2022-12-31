@@ -1,0 +1,79 @@
+
+.titulo-Principal{
+    padding-left: 30px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(19, 101, 124, 0.805);
+    margin-top: 0%;
+    margin-bottom:0%;
+}
+
+#banner{ /* tiene un id -Selectores de identificación*/
+  
+    width: 100%;
+    height:450px ;
+    
+    
+}
+.principal{ /*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
+    background-color: rgba(34, 2, 64, 0.92);
+    padding: 30px;/*espaciamiento interno entre lineas*/
+}
+
+h2{text-align: center;/*SELECTORES*/
+   font-size: 42px;
+    color: azure; 
+}
+
+
+p{ text-align: center;  /*SELECTORES*/
+   color: aliceblue;    
+}
+
+#mision{ /* tiene un id -Selectores de identificación*/
+    font-size: 28px;
+}
+#caracteristica{ /* tiene un id -Selectores de identificación*/
+    font-size: 26px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+
+em strong{   /*SELECTOR de etiqueta*/
+    color: rgb(172, 246, 61);
+}
+
+.diferenciales{/*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
+    background: rgba(234, 98, 2, 0.92) ;
+    padding: 30px;
+
+}
+
+h3{
+    color: aliceblue;
+   text-align: left;
+    font-size: 38px;
+    margin-left: 15%;
+}
+
+.items{  /* Selector de clase---permite reutilizar estilos*/
+    font-style: italic;
+    font-size: 22px;
+    color: aqua;
+}
+
+ul{
+  
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 10%
+   
+}
+
+.imagenDiferenciales{ /*Selectores de Clase-- MAS RECOMENDADOS DE USAR*/
+    width: 45%;
+}
