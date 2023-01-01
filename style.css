@@ -33,8 +33,8 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 }
 
-.mainproductos{
-    background-color: rgba(34, 2, 64, 0.781);
+.main{
+    background-color: rgba(88, 12, 121, 0.842);
 }
 
 .tiposDeTrabajo{
@@ -106,19 +106,58 @@ form{
     margin: 0 450px;
  
 }
-form label{
+form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-form input{
+.input-padron{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 350px;
 }
+
+.checkbox{
+    margin: 20px 0px;
+}
+
+.enviar{
+    width: 300px;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(107, 25, 169);
+    background: rgb(217, 112, 19);
+    border: none;
+    border-radius: 7px;
+    transition: 1s all; /* (all se refiere a los atributos background y transform dentro de .enviar:hover)permite que al pasar hacer un destaque con "hover" sea mas notoble al realizarlo*/
+    cursor: pointer;/*cambia la flecha del puntero por la manito apuntando con el indice*/
+}
+
+.enviar:hover{
+    background: rgb(174, 16, 222);
+    transform: scale(1.1) rotate(2deg);/*agranda la escala en forma global, en nuestro caso un 10%*/
+   /*rota la cantidad de grados*/
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: rgb(4, 4, 4);
+    color: aliceblue;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid cornsilk;
+    padding: 8px 15px;
+}
+
 /*---------------------------------------------------------------------------------------------------------------------------------*/
+
 footer{
     text-align: center;        
     background-color: rgb(15, 177, 222);
