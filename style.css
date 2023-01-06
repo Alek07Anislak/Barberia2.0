@@ -1,11 +1,14 @@
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
 header{
-    background-color: rgba(234, 99, 2, 0.9);
+    background:linear-gradient(rgb(234, 99, 2) 75%,rgb(107, 25, 169));
     padding: 20px 0px;/* 20px superior e inferior --- 0px laterales//// Propiedad de espaciamiento externo */
 }
 
 .logoEnlaces{
     position: relative;
-    width:60%;/* 940px;*/
+    width: 940px; /*60%; 940px;*/
     margin: 0px auto; /* Cero px para los lados y auto para los bordes supp e inferior*/
 } 
 nav  {
@@ -19,11 +22,12 @@ nav li{
     margin: 0px 0px 0px 20px; /*genera distanciamiento entre los elemntos de la lista, tiene 4 parametros*/
 }
 
-nav a{
+nav a, .enlaceHome, .enlaceProducto, .enlaceContacto{
+    
     text-transform: uppercase;  /*transforma a texto en mayuscula*/
     color: black;
     font-weight: bold;/* Texto en Negrilla*/
-    font-size: 26px; /*tamaño de letras*/
+    font-size: 3em ; /*tamaño de letras*/
     text-decoration: none; /*quitar el subrayado que el navegador coloca por defecto a los Enlaces o hipervinculos*/ 
 } 
 
@@ -33,9 +37,11 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 }
 
-.main{
-    background-color: rgba(88, 12, 121, 0.842);
-}
+
+.mainContacto{
+     background:linear-gradient(rgb(107, 25, 169) 80%, rgb(15, 177, 222));   
+    /* juega con el degrade de colores utilizando linear y radio Gradient respectivamente*/
+    }
 
 .tiposDeTrabajo{
     width: 65%;
@@ -63,6 +69,7 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 .tiposDeTrabajo li:hover{ /* propiedad que Captura el movimiento del mouse(Pseudo Clase de CSS)*/
     border-width: 3px;
+    border-color:white ;
 }
 
 .tiposDeTrabajo li:active{ /* propiedad que Captura el click del mouse(Pseudo Clase de CSS)*/
@@ -72,8 +79,7 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 .tiposDeTrabajo h2{
     font-size: 30px;/*tamaño de letras*/
     font-weight: bold;/* Texto en Negrilla*/
-    color: aliceblue;
-
+   
 }
 
 .tiposDeTrabajo li:hover h2{ /*Colocamos esta descripción para ser mas especificos, ya que con ".tiposDeTrabajo h2" no realiza captura el movimiento del mouse sobre el h2*/
@@ -81,9 +87,7 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 } 
 
-.tiposDeTrabajo p{
-    color: aliceblue;
-}
+
 .productoDescripcion {
     font-size: 20px;
 }
@@ -93,13 +97,15 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
     font-weight: bold;
     margin-top: 10px;
 }
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-.maincontacto {
-    background-color: rgba(34, 2, 64, 0.73);
-    /*width: 940px;
-    margin: 0 auto;*/
-    
+.productoPrecios {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+    
+
 form{
     margin: 40px 0;/*margen superior e inferior de 40px y margen laterales de cero*/
     padding: 20px 30px;
@@ -161,7 +167,7 @@ td, th{
 footer{
     text-align: center;        
     background-color: rgb(15, 177, 222);
-    padding: 40px;
+    padding: 10px;
 }
 .copyRight {
     color: rgb(255, 255, 255);
@@ -169,4 +175,189 @@ footer{
     margin: 25px;
 }
 
+/* Aqui inicia el CSS para nuestra pagina inicial. HOME-------------------------------------------------------------------------------------------*/
 
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 0 0;
+    background-color:rgb(107, 25, 169);
+    
+}
+.tituloPrincipal{
+    text-align: center;
+    font-size: 3em; /*3em triplica el tamaño que viene la fuente por defecto, pero este depende del navegador*/
+    margin: 1em 0 1em; /* 0 top, 0 Der y botton 1em;*/
+    clear: left; /* limpie cualquier configuración despues del tituloPrincipal, pero el lado izquierdo*/
+}
+
+.texto {
+    font-size: 1.5em;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 1.3;
+}
+
+.principal p{
+    margin: 0 0 1em; 
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 30%;
+    float: left;/*sirven para que el elemento se destaque en la pantalla, la superficie del elemento continúa siendo utilizada y los otros elementos de texto o elementos en línea se posicionan alrededor de él.*/
+    margin: 0 20px 20px 0; /* 0 top- 20px Derecha- 20px botton- 0 Izquierda (como las manesillas del reloj)*/
+}
+
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+    background: rgb(107, 25, 169) ; 
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mapaContenido{
+    width: 940px;
+    margin: 0 auto;
+   
+}
+
+.diferenciales{
+    padding: 1em;
+    background: linear-gradient(rgb(107, 25, 169) 2% , rgb(15, 177, 222) );
+}
+
+.contenidoDiferenciales{
+    width: 800px; /*tamaño del bloque Contenido*/
+    margin: 0 auto; /* Cero top y booton --- automatico para laterales*/
+}
+
+.listaDiferenciales{
+    width: 60%;  /* 60% del total del bloque Contenido*/
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.5em;
+}
+.items{
+    line-height: 1.3; /*interlineado*/
+}
+
+.items:before{
+    content: "✀    ";/*Pseudo-elemento que coloca antes de todos nuestros  items el contenido ("content") igual una tijera que sacamos de internet buscando Unicodes*/
+}
+
+
+.items:first-child{/*decimos que al primer en la lista pintamelo de negro (Pseudo-clases-Selecciones especiales) aplicando efectos especiales*/
+    font-weight: bold;
+}
+
+#imagenDiferenciales{
+    width: 40%;  /*40% del total del bloque Contenido-- asi llenamos el 100%*/
+    transition: 700ms;
+    box-shadow: 10px 10px 30px 10px rgb(255, 255, 255), -10px -10px 30px 5px white;/* sombras externas alrededor de un objeto box-shadow: valor1 valor2 valor3 valor4 valor5;
+
+    Donde los valores son:
+    
+        Valor1: define el desplazamiento horizontal de la sombra. Puede ser un número positivo, negativo o cero.
+    
+        Valor2: define el desplazamiento vertical de la sombra. Puede ser un número positivo, negativo o cero.
+    
+        Valor3: define el desenfoque de la sombra. Puede ser un número positivo o cero.
+    
+        Valor4: define el alcance de la sombra. Puede ser un número positivo o cero.
+    
+        Valor5: define el color de la sombra.*/ 
+    /*box-shadow: inset 10px 10px 30px 10px black ;--> coloca sombras hacia adentro del objeto  con los parametros  anteriores*/
+}
+#imagenDiferenciales:hover{ /*Al pasar el mouse sobre la imagen*/
+    opacity: 35%;/* para que la imagen se vea opaca: 100%-->sin opacidad <---> 0% --> la imagen no se ve*/
+    
+}
+
+.video{
+    width: 560px;
+    margin: 3em auto;
+    
+}
+
+/* Ver selectores avanzados donde se utilizan el selector ">" para acceder a los hijos de determinado elemento, el selector "~" (símbolo de virgulilla-->Alt+126) para acceder a todos los hermanos de determinado elemento, el selector "+" para acceder al primer hermano de determinado elemento, al selector "not" para acceder a los elementos, excepto algunos*/
+/* ver Cálculo con CSS utilizando la propiedad "calc" para hacer cuentas en la pantalla de desarrolador*/
+@media screen and (max-width:480px) { /*media query-----Dentro de esta media query podemos crear un estilo visual que incluye pantallas de hasta 480pxz*/
+      
+        h1 {
+            text-align: center;
+        }
+        .logoEnlaces, .mapaContenido, .contenidoDiferenciales, .video{
+            width: auto;
+        }
+        .mapaContenido p{
+            font-size: 1em;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        nav{
+            position: static;
+            font-size: 8px;
+        }
+        .utensilios{
+            width: 60%;
+        }
+        .texto{
+            font-size: 1em;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 1em;
+            line-height: 1;
+        }
+        .diferenciales{
+            display: block;
+        }
+        .listaDiferenciales, #imagenDiferenciales {
+            width: 100%;
+            font-size: 1em;
+        }
+        #imagenDiferenciales{
+            padding-top: 1em;
+            box-shadow: none;
+        }
+ /*-----------------------------------Productos---------------------------------------------------*/
+        .tiposDeTrabajo{
+            width: auto;
+            padding: 5px;
+            display: flex;
+        }
+        .imagen{
+            width: 100%
+         
+        }
+  /*--------------------------------Contactos-----------------------------------------------------*/
+        form{
+            margin: auto;
+        }
+
+        form label, form legend{
+            font-size: 16px;
+        }
+
+        .input-padron, #mensaje{
+            width: 250px;
+        } 
+        legend{
+            padding-top: 1em;
+
+        }  
+
+}/*la condición en esta media query dice que si el navegador encuentra una pantalla menor o igual(<=) a 480px aplica la condición que puede ser: body{background:red;}*/

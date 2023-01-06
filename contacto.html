@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,26 @@
     <title>Contacto-Barbería Alek</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" > 
 </head>
 <body>
     <header>
         <div class="logoEnlaces">
-            <h1><img src="Imagenes/logoSF.png" alt="Logo Barbería"></h1> <!-- alt es un atributo que dice "" cuando la imagen no se puede cargar-->
+            <h1 class="logo"><img src="Imagenes/logoSF.png" alt="Logo Barbería"></h1> <!-- alt es un atributo que dice "" cuando la imagen no se puede cargar-->
             <nav>
-                <ul>
+                <ul class="listaNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Productos.html">Productos</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li class="enlaceContacto">Contacto</li>
                 </ul>
             </nav>   
          </div> 
     </header>
 
-    <main class="maincontacto">
+    <main class="mainContacto">
         <form>
             <label for="nombreApellido">Nombre y Apellido: </label>
             <input class="input-padron" type="text" id="nombreApellido" maxlength="20" required placeholder="Luciano Castro"> <!--required --- campo requerido  para iniciar proceso-->
@@ -33,7 +37,7 @@
             <label for="numeroCelular">Celular: </label>
             <input class="input-padron" type="tel" id="numeroCelular" required placeholder="123-45678"><!-- placeholder --- se fijan palabra para ayudar a rellenar los inputs-->
             
-            <label for="mesaje">Mensaje</label>
+            <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" cols="70" rows="10" required placeholder="Sea tan amable de escribir cualquier inquietud "></textarea>
             
              <!--<div>-->
