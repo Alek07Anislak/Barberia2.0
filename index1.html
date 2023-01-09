@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Atributo lang-- declara el idioma en el que vamos a escribir el contenido de la página-->
+<head> <!-- Este elemento se usa para definir la información necesaria para configurar la página web (etiquetas informativas)-->
+       <!--Como el título, el tipo de codificación de caracteres y los archivos externos requeridos por el documento-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Barberia-ProgramacionIV</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="reset.css"> <!--utiliza el archivo reset.css para borrar la configuracion del browser en cuanto a etiquetas y espacios en la pantalla(borra los estilos por defecto), y asi tener un mayor control como desarrolladores al crear una pagina Web--> 
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" >   
+        
+    <script src='main.js'></script>
+    
+    
+
+</head>
+<body> <!--Contenido del documento(parte visible de la pagina Web)-->
+       <header> <!--hace referencia a nuestro encabezado principal-->
+        
+            <div class="logoEnlaces"><!--"caja" en el curso que contiene el logo y el panel de navegación-->
+               <h1 class="logo"><img src="Imagenes/logoSF.png" alt="Logo Barbería"></h1> <!-- alt es un atributo que dice "" cuando la imagen no se puede cargar-->
+               <nav>
+                   <ul class="listaNav">
+                       <li class="enlaceHome">Home</li>
+                       <li><a href="Productos.html">Productos</a></li>
+                       <li><a href="Contacto.html">Contacto</a></li>
+                   </ul>
+               </nav>   
+            </div>   
+            
+       </header>
+    <main>
+   
+                <section class="principal"> <!--bloque donde el contenido tiene el mismo significado, el mismo sentido se usa <section> -->
+                            <img class="banner" src="banner/banner3.jpeg">
+                            <h2 class="tituloPrincipal">Sobre la Barbería Alek</h2> <!-- El carácter ":" sirve para atribuir un valor a una propiedad.-->
+                        <div class="texto">
+                            <img class="utensilios" src="Imagenes/utensiliosSF.png" alt="Imagen de Parrafo-Utensilios de un Barbero">
+                            <p id="caracteristica">Ubicado en el corazón de la ciudad, la <strong>Barbería Alek</strong> trae para el mercado lo mejor que hay para su cabello y barba. Fundada en 2020, la Barbería Alek ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+                            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes."</strong></em></p>
+                            <p id="caracteristica">Ofrecemos profesionales experimentados que están constantemente observando el movimiento y los cambios en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. La atención posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción a nuestros clientes.</p><details>
+                                <summary>Direcciones</summary>
+                                <p>Mcal. Santa Cruz</p>
+                                <p>Zona San Pedro</p>
+                                <p>Zona Sur Calacoto </p>
+                            </details> 
+                        </div>    
+                            
+                
+                </section>
+
+                <section class="mapa">
+                    <h3 class="tituloPrincipal">Nuestra Ubicación</h3>
+                <div class="mapaContenido">    
+                    <p>Nuestro establecimiento esta ubicado en un lugar muy accesible para Ud.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.006965122364!2d-68.12335872656847!3d-16.50097545503171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f206628731547%3A0x546a02adf86708c3!2sBanco%20de%20Cr%C3%A9dito%20BCP!5e0!3m2!1ses-419!2sbo!4v1672600573821!5m2!1ses-419!2sbo" width="560" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe><!--Crea tipo ventanas, espacios, areas en los cuales podemos colocar diferentes tipos de contenido(mapas, videos, gifs u otras páginas web o páginas de redes sociales,etc)-->
+                </div>
+                </section>
+
+
+                <section class="diferenciales">
+                            <h3 class="tituloPrincipal">Diferenciales:</h3>
+                        <div class="contenidoDiferenciales">    
+                            <ul class="listaDiferenciales"> <!--Etiqueta de contenido al igual que <ol></ol>-->
+                            <li class="items">Atención personalizada a los clientes.</li>
+                            <li class="items">Espacio diferenciado.</li>
+                            <li class="items">Localización.</li>
+                            <li class="items">Profesionales calificados.</li>
+                            <li class="items">Puntualidad.</li>
+                            <li class="items">Limpieza.</li>
+                            </ul><img id="imagenDiferenciales" src="banner/diferenciales/diferenciales.jpg" class="imagenDiferenciales">
+                        </div>        
+                        <div class="video">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8pWtdanVz3I?start=31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+                        </div>
+                </section>
+                
+                
+    </main>   
+   
+     <footer>
+        <img src="Imagenes/logo-blanco.png" alt="">
+        <p class="copyRight"> &#174  Derechos Reservados-2022</p>
+    </footer>
+</body>
+</html>
