@@ -1,10 +1,13 @@
 body{
     font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 header{
     background:linear-gradient(rgb(234, 99, 2) 75%,rgb(107, 25, 169));
     padding: 20px 0px;/* 20px superior e inferior --- 0px laterales//// Propiedad de espaciamiento externo */
 }
+
 
 .logoEnlaces{
     position: relative;
@@ -37,10 +40,16 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 }
 
+.mainProductos{
+    background:linear-gradient(rgb(107, 25, 169) 80%, rgb(15, 177, 222));   
+    /* juega con el degrade de colores utilizando linear y radio Gradient respectivamente*/
+    text-align: center;
+}
 
 .mainContacto{
      background:linear-gradient(rgb(107, 25, 169) 80%, rgb(15, 177, 222));   
     /* juega con el degrade de colores utilizando linear y radio Gradient respectivamente*/
+    
     }
 
 .tiposDeTrabajo{
@@ -51,11 +60,12 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 .tiposDeTrabajo li{
     display: inline-block;
+   
     text-align: center; /*Alinea el texto al centro*/
-    width: 30%;
+    width: 25%;
     vertical-align: top; /*Alineación vertical respecto de top*/
     /*background-color: aqua;*/
-    margin: 0% 1.5%;/*  Margenes de 0% leteral y 1.5% en los laterales*/
+    margin: 0% 1.5%;/*  Margenes de 0% superior/inferior y 1.5% en los laterales*/
     padding: 30px 20px; /*espaciamiento interno-- 30px en la vertical y 20px en la horizontal -- aumenta el tamaño*/
     box-sizing: border-box; /*Tamaño de la caja---el borde de cada uno de los items sera el limite del espacio que va ser definido, en nuestro caso seria el 
     30%*/
@@ -65,6 +75,20 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
     border: 2px solid rgb(234, 99, 2);;
     border-radius: 15px; /*bordes redondeados*/
+}
+
+.cajaImagen{
+    text-align: center;
+    width:150px;
+    height: auto;
+    margin: auto;
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    
 }
 
 .tiposDeTrabajo li:hover{ /* propiedad que Captura el movimiento del mouse(Pseudo Clase de CSS)*/
@@ -84,19 +108,19 @@ nav a:hover{ /*Captura el movimiento del mouse (Pseudo Clase de CSS)*/
 
 .tiposDeTrabajo li:hover h2{ /*Colocamos esta descripción para ser mas especificos, ya que con ".tiposDeTrabajo h2" no realiza captura el movimiento del mouse sobre el h2*/
     font-size: 33px;
+    color: white;
 
 } 
+
+.tiposDeTrabajo li:hover .productoPrecios,  .tiposDeTrabajo li:hover .productoDescripcion{
+    color: white;
+}
 
 
 .productoDescripcion {
     font-size: 20px;
 }
 
-.productoPrecio {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-}
 .productoPrecios {
     font-size: 30px;
     font-weight: bold;
@@ -157,8 +181,20 @@ thead{
     color: aliceblue;
     font-weight: bold;
 }
+.horario{
+    display: flex;
+    justify-content: center;
+}
+th:nth-child(1){
+    background-color: black;
+}
+th:nth-child(2){
+    background-color: black;
+}
 td, th{
-    border: 1px solid cornsilk;
+
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
     padding: 8px 15px;
 }
 
@@ -181,7 +217,7 @@ footer{
     width: 100%;
 }
 .principal{
-    padding: 0 0;
+    padding: 1px 0;
     background-color:rgb(107, 25, 169);
     
 }
@@ -243,6 +279,8 @@ footer{
 .contenidoDiferenciales{
     width: 800px; /*tamaño del bloque Contenido*/
     margin: 0 auto; /* Cero top y booton --- automatico para laterales*/
+    display: flex;
+    flex-direction: row;
 }
 
 .listaDiferenciales{
@@ -293,7 +331,10 @@ footer{
     
 }
 
-/* Ver selectores avanzados donde se utilizan el selector ">" para acceder a los hijos de determinado elemento, el selector "~" (símbolo de virgulilla-->Alt+126) para acceder a todos los hermanos de determinado elemento, el selector "+" para acceder al primer hermano de determinado elemento, al selector "not" para acceder a los elementos, excepto algunos*/
+/* Ver selectores avanzados donde se utilizan el selector ">" para acceder a los hijos de determinado elemento, 
+    el selector "~" (símbolo de virgulilla-->Alt+126) para acceder a todos los hermanos de determinado elemento, 
+    el selector "+" para acceder al primer hermano de determinado elemento, al selector "not" para acceder a los elementos, excepto algunos*/
+    
 /* ver Cálculo con CSS utilizando la propiedad "calc" para hacer cuentas en la pantalla de desarrolador*/
 @media screen and (max-width:480px) { /*media query-----Dentro de esta media query podemos crear un estilo visual que incluye pantallas de hasta 480pxz*/
       

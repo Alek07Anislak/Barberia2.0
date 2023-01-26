@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto-Barbería Alek</title>
+    <title>Contacto-Barbería Alura</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
@@ -37,7 +37,7 @@
             <label for="numeroCelular">Celular: </label>
             <input class="input-padron" type="tel" id="numeroCelular" required placeholder="123-45678"><!-- placeholder --- se fijan palabra para ayudar a rellenar los inputs-->
             
-            <label for="mensaje">Mensaje</label>
+            <label for="mensaje">Mensaje: </label>
             <textarea id="mensaje" cols="70" rows="10" required placeholder="Sea tan amable de escribir cualquier inquietud "></textarea>
             
              <!--<div>-->
@@ -61,8 +61,8 @@
                 <legend>Horario en el que quiere ser atendido: </legend>
                     <select name="" id="Listado">
                         <option value="1">Mañana</option>
-                        <option value="2">Tarde</option>
-                        <option value="3">Noche</option>
+                        <option value="2">Tarde-Noche</option>
+                        
                     </select>
             <!--</div>--> 
             </fieldset>   
@@ -71,29 +71,30 @@
 
             <input class="enviar" type="submit" value="Enviar Formulario">
         <!--</form>--> 
-    
-        <table>
-          <thead>
-            <tr>
-                <th>Día</th>
-                <th>Horadio</th>
-            </tr>
-          </thead>  
-          <tbody> 
-            <tr>
-                <td>Lunes</td>
-                <td>8:00 Am - 20:00 Pm</td>
-            </tr>
-            <tr>
-                <td>Miércoles</td>
-                <td>8:00 Am - 20:00 Pm</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>8:00 Am - 20:00 Pm</td>
-            </tr>
-           </tbody>
-        </table>
+            <div class="horario">
+                        <table>
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Horadio</th>
+                            </tr>
+                        </thead>  
+                        <tbody> 
+                            <tr>
+                                <td>Lunes</td>
+                                <td>8:00 Am - 20:00 Pm</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>8:00 Am - 20:00 Pm</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>8:00 Am - 20:00 Pm</td>
+                            </tr>
+                        </tbody>
+                        </table>
+            </div>            
         </form> 
     </main>
 
